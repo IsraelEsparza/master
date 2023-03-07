@@ -14,8 +14,7 @@ public class AddressDelHelp {
     private int id;
 
     @Column(name = "id_user")
-    @ManyToOne(fetch = FetchType.EAGER)
-    private User idUser;
+    private int idUser;
     @Column(name = "number_address")
     private String numberAddress;
     @Column(name = "name_address")
@@ -35,11 +34,11 @@ public class AddressDelHelp {
         this.id = id;
     }
 
-    public User getIdUser() {
+    public int getIdUser() {
         return idUser;
     }
 
-    public void setIdUser(User idUser) {
+    public void setIdUser(int idUser) {
         this.idUser = idUser;
     }
 
